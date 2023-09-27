@@ -551,6 +551,8 @@ int phy_init(void)
 #ifdef CONFIG_PHY_XILINX_GMII2RGMII
 	phy_xilinx_gmii2rgmii_init();
 #endif
+	phy_yutai_init();
+
 	genphy_init();
 
 	return 0;
